@@ -3,6 +3,7 @@ using System;
 using System.ComponentModel;
 using System.IO;
 using System.Runtime.CompilerServices;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
@@ -65,7 +66,7 @@ namespace WpfApp1
         /// <summary>
         /// Refresh delay use for Task.Delay() method
         /// </summary>
-        private int _refreshTime = 100;
+        private int _refreshTime = 33;
 
         #endregion
 
@@ -138,7 +139,28 @@ namespace WpfApp1
             seletor = new Seletor(this);
             SetUriTextBlock();           // Set the uri status
             IsPlayingChanged += Play;
+            FpsTextBox.PreviewTextInput += IInputx_PreviewTextInput;
             FpsTextBox.TextChanged+= FpsTextBox_PreviewTextInput;
+        }
+
+        private void IInputx_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            var a = (FpsTextBox.Text.Length <= 2) ? true : false;
+
+            if (a)
+            {
+                e.Handled = IsTextAllowed(e.Text);
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+        private bool IsTextAllowed(string text)
+        {
+            Regex regex = new Regex("[^0-9.-]+");       //regex that matches disallowed text
+
+            return regex.IsMatch(text);
         }
 
         /// <summary>
@@ -201,11 +223,26 @@ namespace WpfApp1
         /// <param name="e"></param>
         private void FpsTextBox_PreviewTextInput(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
-            if (FpsTextBox.Text != ""&& (int.Parse(FpsTextBox.Text)) < 120 && (int.Parse(FpsTextBox.Text)) > 0)
+            try
             {
-                Fps = int.Parse(FpsTextBox.Text);
+                if (FpsTextBox.Text != "")
+                {
+                    var i = int.Parse(FpsTextBox.Text);
+                    if (i <= 120 && i > 0)
+                    {
+                        Fps = i;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else
+                {
+                    return;
+                }
             }
-            else
+            catch
             {
                 return;
             }

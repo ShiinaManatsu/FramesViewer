@@ -6,6 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
+        ShowInTaskbar="False"
         WindowStartupLocation="CenterScreen"
         Background="{StaticResource BackgroundGrayBrush}"
         MinWidth="700" MinHeight="405"

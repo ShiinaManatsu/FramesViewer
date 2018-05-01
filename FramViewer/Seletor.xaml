@@ -75,7 +75,7 @@
             </TextBlock>
         </Grid>
         <StackPanel Grid.Row="1" Orientation="Vertical">
-            <do:MaterialRaisedButton x:Name="SelectButton" Accent="White" Margin="0 5" Content="select folder" Foreground="{StaticResource MainPinkBrush}" Style="{DynamicResource MaterialRaisedButtonStyleWithShadow}"/>
+            <do:MaterialRaisedButton x:Name="SelectButton" Accent="White" Margin="0 10 0 5" Content="select folder" Foreground="{StaticResource MainPinkBrush}" Style="{DynamicResource MaterialRaisedButtonStyleWithShadow}"/>
             <do:MaterialRaisedButton x:Name="FinishButton"  Margin="0 5" Content="finish" Foreground="{StaticResource MainPinkBrush}" Accent="White" Style="{DynamicResource MaterialRaisedButtonStyleWithShadow}"/>
         </StackPanel>
     </Grid>
