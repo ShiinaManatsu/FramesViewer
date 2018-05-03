@@ -6,7 +6,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        ShowInTaskbar="False"
         WindowStartupLocation="CenterScreen"
         Background="{StaticResource BackgroundGrayBrush}"
         MinWidth="700" MinHeight="405"
@@ -18,7 +17,7 @@
         </Grid.RowDefinitions>
 
         <!-- Status Bar -->
-        <Grid Grid.Row="0" Background="White" Margin="0 1 0 0" Panel.ZIndex="12">
+        <Grid Grid.Row="0" Background="White" Panel.ZIndex="12">
             <Grid.Effect>
                 <DropShadowEffect Direction="270" Opacity="0.1" ShadowDepth="5"/>
             </Grid.Effect>

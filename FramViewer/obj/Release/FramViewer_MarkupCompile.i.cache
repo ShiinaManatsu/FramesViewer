@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-D:\VS\Project\FramViewer\FramesViewer\FramViewer\obj\Debug\
+D:\VS\Project\FramViewer\FramesViewer\FramViewer\obj\Release\
 FramViewer
 none
 false
-DEBUG;TRACE
+TRACE
 D:\VS\Project\FramViewer\FramesViewer\FramViewer\App.xaml
 3480136119
 
-10-1041111168
+10-150628653
 15-1414232017
 Player.xaml;Resource.xaml;Seletor.xaml;
 

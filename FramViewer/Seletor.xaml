@@ -7,6 +7,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:Converters="clr-namespace:Digimezzo.WPFControls.Converters;assembly=Digimezzo.WPFControls" x:Class="WpfApp1.Seletor"
         mc:Ignorable="d"
+        ShowInTaskbar="False"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize" Background="{StaticResource BackgroundGrayBrush}"
         Title="Seletor" Height="450" Width="300">

@@ -3,8 +3,6 @@ D:\VS\Project\FramViewer\FramesViewer\FramViewer\bin\Release\FramViewer.exe.mani
 D:\VS\Project\FramViewer\FramesViewer\FramViewer\bin\Release\FramViewer.application
 D:\VS\Project\FramViewer\FramesViewer\FramViewer\bin\Release\FramViewer.exe
 D:\VS\Project\FramViewer\FramesViewer\FramViewer\bin\Release\FramViewer.pdb
-D:\VS\Project\FramViewer\FramesViewer\FramViewer\bin\Release\FramViewer.exe.CodeAnalysisLog.xml
-D:\VS\Project\FramViewer\FramesViewer\FramViewer\bin\Release\FramViewer.exe.lastcodeanalysissucceeded
 D:\VS\Project\FramViewer\FramesViewer\FramViewer\bin\Release\Digimezzo.WPFControls.dll
 D:\VS\Project\FramViewer\FramesViewer\FramViewer\bin\Release\Digimezzo.WPFControls.pdb
 D:\VS\Project\FramViewer\FramesViewer\FramViewer\obj\Release\Player.g.cs
