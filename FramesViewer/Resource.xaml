@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:FramesViewer">
+
+    <Color x:Key="MainPink">#e91e63</Color>
+    <SolidColorBrush x:Key="MainPinkBrush" Color="{StaticResource MainPink}"/>
+    
+    <Color x:Key="BackgroundGray">#eee</Color>
+    <SolidColorBrush x:Key="BackgroundGrayBrush" Color="{StaticResource BackgroundGray}"/>
+</ResourceDictionary>
