@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WpfApp1
@@ -62,11 +64,15 @@ namespace WpfApp1
         /// <param name="e"></param>
         private void SelectButton_Clcke(object sender, System.Windows.RoutedEventArgs e)
         {
-            using(var f=new OpenFileDialog() { CheckFileExists = false, CheckPathExists = false, ValidateNames = false, FileName = "Select Folder" })
-            {
-                f.ShowDialog();
-                SelectedFolderPath = f.FileName.Remove(f.FileName.Length - 13);
-            }
+            new Thread(() =>
+              {
+                  using (var f = new OpenFileDialog() { CheckFileExists = false, CheckPathExists = false, ValidateNames = false, FileName = "Select Folder" })
+                  {
+                      f.ShowDialog();
+                      SelectedFolderPath = f.FileName.Remove(f.FileName.Length - 13);
+                  }
+              })
+            { ApartmentState = ApartmentState.STA }.Start();
         }
 
         /// <summary>
