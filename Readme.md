@@ -1,2 +1,3 @@
-#FramsViewer"# FramesViewer" 
-"# FramesViewer" 
+右上Select一个只包含图片序列的文件夹
+点击完成后
+使用左上角Play按钮改变播放状态
